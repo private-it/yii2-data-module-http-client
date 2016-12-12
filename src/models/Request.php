@@ -13,6 +13,7 @@ use yii\db\Expression;
  * Request
  *
  * @property integer $id
+ * @property string $name
  * @property string $url
  * @property string $headers
  * @property string $body
@@ -82,6 +83,7 @@ class Request extends ActiveRecord
     {
         return [
             'id' => Yii::t('http-client/request', 'label.id'),
+            'name' => Yii::t('http-client/request', 'label.name'),
             'url' => Yii::t('http-client/request', 'label.url'),
             'headers' => Yii::t('http-client/request', 'label.headers'),
             'body' => Yii::t('http-client/request', 'label.body'),
@@ -101,6 +103,7 @@ class Request extends ActiveRecord
     {
         return [
             'id' => Yii::t('http-client/request', 'hint.id'),
+            'name' => Yii::t('http-client/request', 'hint.name'),
             'url' => Yii::t('http-client/request', 'hint.url'),
             'headers' => Yii::t('http-client/request', 'hint.headers'),
             'body' => Yii::t('http-client/request', 'hint.body'),
@@ -120,6 +123,7 @@ class Request extends ActiveRecord
     {
         return [
             'id' => Yii::t('http-client/request', 'placeholder.id'),
+            'name' => Yii::t('http-client/request', 'placeholder.name'),
             'url' => Yii::t('http-client/request', 'placeholder.url'),
             'headers' => Yii::t('http-client/request', 'placeholder.headers'),
             'body' => Yii::t('http-client/request', 'placeholder.body'),
@@ -151,6 +155,28 @@ class Request extends ActiveRecord
     public function setId($value)
     {
         $this->id = $value;
+        return $this;
+    }
+
+    /**
+     * Get value from Name
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * Set value to Name
+     *
+     * @param $value
+     * @return $this
+     */
+    public function setName($value)
+    {
+        $this->name = $value;
         return $this;
     }
 
