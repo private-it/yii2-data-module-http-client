@@ -1,6 +1,7 @@
 <?php
 return [
     'label.id' => '#',
+    'label.name' => 'Имя',
     'label.url' => 'URL',
     'label.headers' => 'Заголовки',
     'label.body' => 'Данные',
@@ -12,6 +13,7 @@ return [
     'label.created_at' => 'Создано',
 
     'hint.id' => "\r",
+    'hint.name' => "\r",
     'hint.url' => "\r",
     'hint.headers' => "\r",
     'hint.body' => "\r",
@@ -23,6 +25,7 @@ return [
     'hint.created_at' => "\r",
 
     'placeholder.id' => "\r",
+    'placeholder.name' => "\r",
     'placeholder.url' => "\r",
     'placeholder.headers' => "\r",
     'placeholder.body' => "\r",
