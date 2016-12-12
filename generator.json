@@ -1,0 +1,14 @@
+{
+  "httpClient": {
+    "outPath": "src",
+    "source": {
+      "urlRefresh": "http://gii.it-private.ru/e-r-d2/refresh",
+      "urlGenerate": "http://gii.it-private.ru/e-r-d2/generate-module",
+      "params": {
+        "ns": "PrivateIT\\modules\\httpClient",
+        "name": "HttpClient",
+        "docId": "2a7c83c4-7a80-49c3-80ed-df329e2e31d6"
+      }
+    }
+  }
+}
