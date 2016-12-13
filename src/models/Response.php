@@ -68,7 +68,6 @@ class Response extends ActiveRecord
         $behaviors = parent::behaviors();
         $behaviors[] = [
             'class' => TimestampBehavior::className(),
-            'value' => new Expression('NOW()'),
         ];
         return $behaviors;
     }
