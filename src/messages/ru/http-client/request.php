@@ -11,6 +11,8 @@ return [
     'label.status' => 'Статус',
     'label.updated_at' => 'Обновлено',
     'label.created_at' => 'Создано',
+    'label.external_id' => 'Внешний ID',
+    'label.data' => 'Дополнительные данные',
 
     'hint.id' => "\r",
     'hint.name' => "\r",
@@ -23,6 +25,8 @@ return [
     'hint.status' => "\r",
     'hint.updated_at' => "\r",
     'hint.created_at' => "\r",
+    'hint.external_id' => "\r",
+    'hint.data' => "\r",
 
     'placeholder.id' => "\r",
     'placeholder.name' => "\r",
@@ -35,4 +39,6 @@ return [
     'placeholder.status' => "\r",
     'placeholder.updated_at' => "\r",
     'placeholder.created_at' => "\r",
+    'placeholder.external_id' => "\r",
+    'placeholder.data' => "\r",
 ];

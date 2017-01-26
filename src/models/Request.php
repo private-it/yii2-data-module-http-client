@@ -23,6 +23,8 @@ use yii\db\Expression;
  * @property integer $status
  * @property string $updated_at
  * @property string $created_at
+ * @property string $external_id
+ * @property string $data
  *
  * @property Response[] $responses
  */
@@ -92,6 +94,8 @@ class Request extends ActiveRecord
             'status' => Yii::t('http-client/request', 'label.status'),
             'updated_at' => Yii::t('http-client/request', 'label.updated_at'),
             'created_at' => Yii::t('http-client/request', 'label.created_at'),
+            'external_id' => Yii::t('http-client/request', 'label.external_id'),
+            'data' => Yii::t('http-client/request', 'label.data'),
         ];
     }
 
@@ -112,6 +116,8 @@ class Request extends ActiveRecord
             'status' => Yii::t('http-client/request', 'hint.status'),
             'updated_at' => Yii::t('http-client/request', 'hint.updated_at'),
             'created_at' => Yii::t('http-client/request', 'hint.created_at'),
+            'external_id' => Yii::t('http-client/request', 'hint.external_id'),
+            'data' => Yii::t('http-client/request', 'hint.data'),
         ];
     }
 
@@ -132,6 +138,8 @@ class Request extends ActiveRecord
             'status' => Yii::t('http-client/request', 'placeholder.status'),
             'updated_at' => Yii::t('http-client/request', 'placeholder.updated_at'),
             'created_at' => Yii::t('http-client/request', 'placeholder.created_at'),
+            'external_id' => Yii::t('http-client/request', 'placeholder.external_id'),
+            'data' => Yii::t('http-client/request', 'placeholder.data'),
         ];
     }
 
@@ -374,6 +382,50 @@ class Request extends ActiveRecord
     public function setCreatedAt($value)
     {
         $this->created_at = $value;
+        return $this;
+    }
+
+    /**
+     * Get value from ExternalId
+     *
+     * @return string
+     */
+    public function getExternalId()
+    {
+        return $this->external_id;
+    }
+
+    /**
+     * Set value to ExternalId
+     *
+     * @param $value
+     * @return $this
+     */
+    public function setExternalId($value)
+    {
+        $this->external_id = $value;
+        return $this;
+    }
+
+    /**
+     * Get value from Data
+     *
+     * @return string
+     */
+    public function getData()
+    {
+        return $this->data;
+    }
+
+    /**
+     * Set value to Data
+     *
+     * @param $value
+     * @return $this
+     */
+    public function setData($value)
+    {
+        $this->data = $value;
         return $this;
     }
 
